@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --poppins: "Poppins", sans-serif;
+  --clr-dark: #2b2b2b;
+  --clr-light: #ffff;
+  --red: #e94e3a;
+  --blue: #2c56a5;
+  --green: #40b611;
+  --orange: #d38209;
+  --h1: 90px;
+  --h2: 33px;
+  --h3: 24px;
+  --h4: 16px;
+  --h5: 12px;
+  --h6: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color: var(--clr-dark);
+  font-family: var(--truculenta);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+/* HEADER */
+
+.header {
+  padding: 2rem 0;
+}
+.header__title {
+  text-align: center;
+  font-family: var(--poppins);
+  font-size: var(--h2);
+  padding-bottom: 3rem;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+
+/* HOME BANNER */
+.homeBanner {
+  padding: 5rem 0;
+}
+.homeBanner__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.homeBanner--largeCard {
+  display: flex;
+  margin-right: 2rem;
+}
+.homeBanner--largeCard img {
+  width: 100%;
+  object-fit: cover;
+}
+.homeBanner--firstCard img {
+  display: flex;
+  width: 100%;
+  height: 26rem;
+  object-fit: cover;
+  padding-bottom: 1rem;
+}
+.homeBanner--smallCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.homeBanner--smallCards img {
+  display: flex;
+  width: 100%;
+  height: 26rem;
+  object-fit: cover;
+  padding-top: 1rem;
+}
+.largeCard--details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 43rem;
+}
+.largeCard--details p {
+  color: white;
+  font-family: var(--poppins);
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.firstCard--details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 17rem;
+}
+.firstCard--details p {
+  color: white;
+  font-family: var(--poppins);
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.smallCard--details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 17rem;
+}
+.smallCard--details p {
+  color: white;
+  font-family: var(--poppins);
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Trending */
+.trending {
+  padding: 5rem 0;
+}
+.pageTitle {
+  padding-bottom: 3rem;
+}
+.trending__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 3rem;
+}
+.card__details1 ul {
+  font-family: var(--poppins);
+  font-weight: 700;
+  max-width: 33rem;
+}
+.card__details1 p {
+  justify-content: center;
+  max-width: 30rem;
+  padding-bottom: 1rem;
+  font-family: var(--poppins);
+}
+.card__details1 img {
+  width: 50rem;
+  height: 33.5rem;
+  object-fit: cover;
+}
+
+.card__details2 p {
+  justify-content: center;
+  max-width: 30rem;
+  font-family: var(--poppins);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.card__details2 img {
+  width: 55rem;
+  height: 33.5rem;
+}
+.card__details3 p {
+  justify-content: center;
+  max-width: 30rem;
+  font-family: var(--poppins);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.card__details3 {
+  width: 26rem;
+}
+
+.card__details4  {
+  justify-content: center;
+  max-width: 30rem;
+  font-family: var(--poppins);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.card__details4 img {
+  width: 26rem;
+  height: 17.3rem;
+}
+
+.election__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.card__details5  {
+  justify-content: center;
+  max-width: 30rem;
+  font-family: var(--poppins);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.card__details5 ul {
+  width: 5.5rem;
+}
+.card__details5 img {
+  width: 25rem;
+  height: 20rem;
+}
+.card__details5 a{
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+
+/* FRESH NEWS */
+
+/* FirstY */
+.freshnews{
+    padding:5rem 0 ;
+}
+.wrapper__1s{
+    width: 20rem;
+}
+.news__details1{
+    max-width: 100%;
+}
+
+
+.freshNews__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* 2ndY */
+.second__details{
+    
+ max-width: 100%;   
+}
+.second__news{
+    width: 20rem;
+}
+/* 3rdY */
+.third__details{
+    
+ max-width: 100%;   
+}
+.third__news{
+    width: 20rem;
+}
+.wrapper__3rd{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REUSABLE */
+.colorRed {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  background-color: var(--red);
+  color: white;
+  font-family: var(--poppins);
+}
+.colorBlue {
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: var(--blue);
+  color: white;
+  font-family: var(--poppins);
+}
+.colorGreen {
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: var(--green);
+  color: white;
+  font-family: var(--poppins);
+}
+.colorOrange {
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: var(--orange);
+  color: white;
+  font-family: var(--poppins);
+}
+.pageTitle {
+  color: var(--clr-dark);
+  font-size: var(--h2);
+  font-family: var(--poppins);
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.178);
+  margin-bottom: 3rem;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+
+
